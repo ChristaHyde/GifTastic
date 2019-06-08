@@ -1,4 +1,4 @@
-var queryURL = "https://api.giphy.com/v1/gifs/trending?r=g&api_key=dc6zaTOxFJmzC";
+var queryURL = "https://api.giphy.com/v1/gifs/trending?r=g&api_key=DghePw7TK34czczXd8BCNLVHaJXtpijL";
 var yoDOM = $("#yo")
 var topics = ["Baseball", "Basketball", "Hockey", "Football", "Tennis", "Gymnastics", "Soccer", "Chess"]
 
@@ -18,7 +18,7 @@ $(document).on("click", ".sports", function (event) {
   console.log(sport)
   yoDOM.empty()
   $.ajax({
-    url: "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&rating=g&limit=10&q=" + sport,
+    url: "https://api.giphy.com/v1/gifs/search?api_key=DghePw7TK34czczXd8BCNLVHaJXtpijL&rating=g&limit=10&q=" + sport,
     method: "GET"
   }).then(function (response) {
     console.log(response);
@@ -66,6 +66,8 @@ $(document).on("click", ".gif", function (event) {
     $(this).attr("data-state", "still");
   }
 });
+
+
 
 
 
